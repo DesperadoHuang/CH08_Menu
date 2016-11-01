@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CH08_01_OptionsMenu/CH08_01_OptionsMenu.iml" filepath="$PROJECT_DIR$/CH08_01_OptionsMenu/CH08_01_OptionsMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH08_02_ContentMenu/CH08_02_ContentMenu.iml" filepath="$PROJECT_DIR$/CH08_02_ContentMenu/CH08_02_ContentMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH08_03_Submenu/CH08_03_Submenu.iml" filepath="$PROJECT_DIR$/CH08_03_Submenu/CH08_03_Submenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH08_Menu.iml" filepath="$PROJECT_DIR$/CH08_Menu.iml" />
     </modules>
   </component>
