@@ -1,6 +1,5 @@
 package com.main;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,7 +9,6 @@ import android.view.SubMenu;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private Context context;
     private TextView textView_tea, textView_coffee, textView_coolHot;
 
     @Override
@@ -18,12 +16,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        context = this;
-
         textView_tea = (TextView) findViewById(R.id.textView_tea);
         textView_coffee = (TextView) findViewById(R.id.textView_coffee);
         textView_coolHot = (TextView) findViewById(R.id.textView_Cool_Hot);
-
 
     }
 
@@ -55,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         boolean flag = !item.isChecked();
         item.setChecked(flag);
-
         switch (item.getGroupId()) {
             case 1:
                 if (flag) {
