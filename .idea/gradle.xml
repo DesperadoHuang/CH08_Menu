@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/CH08_01_OptionsMenu" />
             <option value="$PROJECT_DIR$/CH08_02_ContentMenu" />
             <option value="$PROJECT_DIR$/CH08_03_Submenu" />
+            <option value="$PROJECT_DIR$/CH08_04_XMLMenu" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

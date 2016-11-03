@@ -1,1 +1,1 @@
-include ':CH08_01_OptionsMenu', ':CH08_02_ContentMenu', ':CH08_03_Submenu'
+include ':CH08_01_OptionsMenu', ':CH08_02_ContentMenu', ':CH08_03_Submenu', ':CH08_04_XMLMenu'

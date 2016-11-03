@@ -2,7 +2,6 @@ package com.main;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
@@ -10,6 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView_tea, textView_coffee, textView_coolHot;
+    private String itemTitle = "";
+    private int menuClickConut = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,32 +49,40 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        new MyLog(item.getTitle().toString() + ":" + item.isChecked() + "");
+
+        itemTitle = itemTitle + item.getTitle().toString();
         boolean flag = !item.isChecked();
         item.setChecked(flag);
-        switch (item.getGroupId()) {
-            case 1:
-                if (flag) {
-                    textView_tea.setText(item.getTitle().toString());
-                } else {
-                    textView_tea.setText("");
-                }
-                break;
-            case 2:
-                if (flag) {
-                    textView_coffee.setText(item.getTitle().toString());
-                } else {
-                    textView_coffee.setText("");
-                }
-                break;
-            case 3:
-                if (flag) {
-                    textView_coolHot.setText(item.getTitle().toString());
-                } else {
-                    textView_coolHot.setText("");
-                }
-                break;
+        if (flag) {
+            textView_tea.setText(itemTitle);
+        } else {
+            textView_tea.setText("");
         }
-        Log.i("wilsonhuang", flag + "");
+        //        switch (item.getGroupId()) {
+        //            case 1:
+        //                if (flag) {
+        //                    textView_tea.setText(item.getTitle().toString());
+        //                } else {
+        //                    textView_tea.setText("");
+        //                }
+        //                break;
+        //            case 2:
+        //                if (flag) {
+        //                    textView_coffee.setText(item.getTitle().toString());
+        //                } else {
+        //                    textView_coffee.setText("");
+        //                }
+        //                break;
+        //            case 3:
+        //                if (flag) {
+        //                    textView_coolHot.setText(item.getTitle().toString());
+        //                } else {
+        //                    textView_coolHot.setText("");
+        //                }
+        //                break;
+        //        }
+        new MyLog(item.getTitle().toString() + ":" + item.isChecked() + "");
         return super.onOptionsItemSelected(item);
     }
 }
