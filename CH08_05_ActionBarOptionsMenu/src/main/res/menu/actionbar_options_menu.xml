@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_game"
+        android:icon="@drawable/game"
+        android:title="Game"
+        app:showAsAction="ifRoom">
+        <menu
+            >
+            <item
+                android:id="@+id/game1"
+                android:title="Mario"/>
+            <item
+                android:id="@+id/game2"
+                android:title="Sonic"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_close"
+        android:title="QUIT"
+        app:showAsAction="always"/>
+</menu>
