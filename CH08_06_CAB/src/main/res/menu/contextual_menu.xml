@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_Delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Delete"
+        android:titleCondensed="Delete"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/item_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Share"
+        android:titleCondensed="Share"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

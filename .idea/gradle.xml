@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/CH08_03_Submenu" />
             <option value="$PROJECT_DIR$/CH08_04_XMLMenu" />
             <option value="$PROJECT_DIR$/CH08_05_ActionBarOptionsMenu" />
+            <option value="$PROJECT_DIR$/CH08_06_CAB" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
